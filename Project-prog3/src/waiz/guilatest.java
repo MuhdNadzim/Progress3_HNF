@@ -52,6 +52,7 @@ int i = 0;
         mobobesetext.setVisible(false);
         
         addRowToJTable();
+        addRowToJTable2();
         
         /////////////////   
         
@@ -87,6 +88,50 @@ int i = 0;
     {
     	DefaultTableModel  model = (DefaultTableModel) jTable1.getModel();
     	ArrayList<bmi1> list = ListBmi();
+    	Object rowData[] = new Object[2];
+    	for(int i = 0; i < list.size(); i++) 
+    	{
+    		rowData[0] = list.get(i).categories;
+    		rowData[1] = list.get(i).bmirange;
+    		model.addRow(rowData);
+    	}
+    }
+    
+    /////////////////////
+    
+    
+    public class bmi2{
+    	public String categories;
+    	public String bmirange;
+    	
+    	public bmi2(String age, String Bmirange2) 
+    	{
+    		this.categories = age;
+    		this.bmirange = Bmirange2;
+    	}
+    }
+    
+    public  ArrayList ListBmi2()
+    {
+    	ArrayList<bmi2> list = new ArrayList<bmi2>();
+    	bmi2 bod1 = new bmi2("19 - 24","19 - 24");
+    	bmi2 bod2 = new bmi2("25 - 34","20 - 25");
+    	bmi2 bod3 = new bmi2("35 - 44","21 - 26");
+    	bmi2 bod4 = new bmi2("45 - 54","22 - 27");
+    	bmi2 bod5 = new bmi2("55 - 64","23 - 28");
+    	bmi2 bod6 = new bmi2("Above 64","24 - 29");
+    	list.add(bod1);
+    	list.add(bod2);
+    	list.add(bod3);
+    	list.add(bod4);
+    	list.add(bod5);
+    	list.add(bod6);
+    	return list;
+    }
+    public void addRowToJTable2()
+    {
+    	DefaultTableModel  model = (DefaultTableModel) jTable2.getModel();
+    	ArrayList<bmi2> list = ListBmi2();
     	Object rowData[] = new Object[2];
     	for(int i = 0; i < list.size(); i++) 
     	{
@@ -466,27 +511,13 @@ int i = 0;
         jScrollPane2.setBounds(460, 170, 370, 120);
 
         jTable2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {"19 - 24", "19 - 24"},
-                {"25 - 34", "20 - 25"},
-                {"35 - 44", "21 - 26"},
-                {"45 - 54", "22 - 27"},
-                {"55 - 64", "23 - 28"},
-                {"Above 64", "24 - 29"}
-            },
-            new String [] {
-                "AGE", "BMI Range"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        jTable2.setModel(new DefaultTableModel(
+        	new Object[][] {
+        	},
+        	new String[] {
+        		"AGE", "BMI Range"
+        	}
+        ));
         jScrollPane3.setViewportView(jTable2);
 
         jPanel3.add(jScrollPane3);

@@ -54,7 +54,7 @@ int i = 0;
         
         addRowToJTable();
         addRowToJTable2();
-        
+   
         /////////////////   
         
     }
@@ -67,6 +67,7 @@ int i = 0;
     	{
     		this.categories = Categories;
     		this.bmirange = Bmirange;
+    		
     	}
     }
     
@@ -95,8 +96,14 @@ int i = 0;
     		rowData[0] = list.get(i).categories;
     		rowData[1] = list.get(i).bmirange;
     		model.addRow(rowData);
+    		
+    		
     	}
+    	
+    	
+    	
     }
+    
     
     /////////////////////
     
@@ -128,7 +135,10 @@ int i = 0;
     	list.add(bod5);
     	list.add(bod6);
     	return list;
+    	
+    	
     }
+    
     public void addRowToJTable2()
     {
     	DefaultTableModel  model = (DefaultTableModel) jTable2.getModel();
@@ -139,6 +149,7 @@ int i = 0;
     		rowData[0] = list.get(i).categories;
     		rowData[1] = list.get(i).bmirange;
     		model.addRow(rowData);
+    		
     	}
     }
     /**

@@ -223,7 +223,8 @@ public class gui1 {
 			}
 			x.close();
 		}catch(Exception e){
-			JOptionPane.showConfirmDialog(null, "bruh, unable to load");
+			//JOptionPane.showConfirmDialog(null, "bruh, unable to load");
+			JOptionPane.showInternalConfirmDialog(null, "No record found!","Outdoor Sport Club", 0);
 		}
 		scrollPane.setViewportView(table);
 		
@@ -266,7 +267,7 @@ public class gui1 {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					File fl= new File("new1.csv");
+					File fl= new File("RECORD2.csv");
 					FileWriter csvW = new FileWriter(fl);
 					BufferedWriter bw=new BufferedWriter(csvW);
 					PrintWriter pw=new PrintWriter(bw);

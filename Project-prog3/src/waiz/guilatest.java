@@ -16,6 +16,7 @@ import java.util.Calendar;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JLabel;
 
 /**
  *
@@ -235,7 +236,7 @@ int i = 0;
         text22.setColumns(20);
         text22.setFont(new java.awt.Font("Leelawadee", 1, 16)); // NOI18N
         text22.setRows(5);
-        text22.setText("Thiss class package will included:\n1)Learning how to swimming correctly.\n2)Learning aerobic using Stationary Bike.\n3)Learning aerobic using Elliptical.\n\nEquipment you need is:\n1)pool, swimsuit, goggles (optional)\n2)stationary bike\n3)elliptical machine\n\nSubscription Price:\nRM250\n\n\n\n\n\n\n\n");
+        text22.setText("Thiss class package will included:\r\n1)Learning how to swimming correctly.\r\n2)Learning aerobic using Stationary Bike.\r\n3)Learning aerobic using Elliptical.\r\n\r\nEquipment you need is:\r\n1)pool, swimsuit, goggles (optional)\r\n2)stationary bike\r\n3)elliptical machine\r\n\r\nSubscription Price:\r\nRM250/month +FREE first month gym subscription.");
         text2.setViewportView(text22);
 
         jPanel2.add(text2);
@@ -938,5 +939,4 @@ int i = 0;
     private javax.swing.JTextArea text22;
     private javax.swing.JTextField text2tf;
     private javax.swing.JTextField text3tf;
-    // End of variables declaration//GEN-END:variables
 }

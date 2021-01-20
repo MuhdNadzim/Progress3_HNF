@@ -22,6 +22,7 @@ import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -33,10 +34,12 @@ import java.util.Scanner;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
 import javax.swing.SwingConstants;
+import java.awt.Toolkit;
+import java.awt.Window.Type;
 
 public class gui1 {
 
-	private JFrame frame;
+	private JFrame frmOutdoorSportsRegistry;
 	private JTextField txtname1;
 	private JTextField txtname2;
 	private JComboBox cbgen;
@@ -51,7 +54,7 @@ public class gui1 {
 			public void run() {
 				try {
 					gui1 window = new gui1();
-					window.frame.setVisible(true);
+					window.frmOutdoorSportsRegistry.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -73,22 +76,23 @@ public class gui1 {
 		info inf=new info();
 		Random rand=new Random();
 		outdoorsportdemo ods=new outdoorsportdemo();
-		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.DARK_GRAY);
-		frame.setBounds(100, 100, 1010, 581);
-		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmOutdoorSportsRegistry = new JFrame();
+		frmOutdoorSportsRegistry.setTitle("Outdoor Sports Registry");
+		frmOutdoorSportsRegistry.getContentPane().setBackground(Color.DARK_GRAY);
+		frmOutdoorSportsRegistry.setBounds(100, 100, 1010, 581);
+		frmOutdoorSportsRegistry.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frmOutdoorSportsRegistry.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Outdoor Sports Club");
 		lblNewLabel.setForeground(Color.ORANGE);
 		lblNewLabel.setBackground(Color.WHITE);
 		lblNewLabel.setBounds(10, 11, 399, 70);
 		lblNewLabel.setFont(new Font("Vivaldi", Font.BOLD, 40));
-		frame.getContentPane().add(lblNewLabel);
+		frmOutdoorSportsRegistry.getContentPane().add(lblNewLabel);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(10, 76, 974, 455);
-		frame.getContentPane().add(tabbedPane);
+		frmOutdoorSportsRegistry.getContentPane().add(tabbedPane);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.LIGHT_GRAY);
@@ -255,20 +259,39 @@ public class gui1 {
 			
 			}
 		});
-		btnNewButton.setBounds(10, 14, 89, 23);
+		btnNewButton.setBounds(10, 254, 133, 74);
 		panel_1.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Print to CSV");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-				
+					File fl= new File("new1.csv");
+					FileWriter csvW = new FileWriter(fl);
+					BufferedWriter bw=new BufferedWriter(csvW);
+					PrintWriter pw=new PrintWriter(bw);
+					ArrayList<String> nfo1=new ArrayList<String>();
+					nfo1=inf.print();
+					bw.write("ID,Sport,First Name,Last Name,Gender,Race");
+					bw.newLine();
+					String g="";
+					 for(int i=0;i<nfo1.size();i++)
+				        {
+						 	g=nfo1.get(i);
+						 	bw.write(g);
+				        }
+					pw.flush();
+					bw.flush();
+					pw.close();
+					bw.close();
+					csvW.close();					
+					JOptionPane.showMessageDialog(null, "Success");
 				}catch(Exception e2) {
-					
+					JOptionPane.showMessageDialog(null, "Oops something went wrong");
 				}
 			}
 		});
-		btnNewButton_1.setBounds(10, 48, 89, 23);
+		btnNewButton_1.setBounds(10, 339, 133, 77);
 		panel_1.add(btnNewButton_1);
 		
 		JButton butreg = new JButton("Register");

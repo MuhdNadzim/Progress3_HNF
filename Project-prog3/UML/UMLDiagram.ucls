@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="nadzim.BikeExercise" project="Project-prog3" 
+    file="/Project-prog3/src/nadzim/BikeExercise.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="109" x="3016" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fauzan.hiking" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/hiking.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="132" x="2500" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="waiz.eliptical" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/eliptical.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="110" x="3463" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="sasikala.Obesity" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Obesity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="96" x="2364" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="waiz.swimming" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/swimming.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="110" x="3613" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="nadzim.MainGym" project="Project-prog3" 
+    file="/Project-prog3/src/nadzim/MainGym.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="187" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="fauzan.part1" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/participant.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="180" x="510" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="nadzim.Weightlifting" project="Project-prog3" 
+    file="/Project-prog3/src/nadzim/Weightlifting.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="109" x="3165" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="fauzan.participant" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/participant.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="151" x="510" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="waiz.main" project="Project-prog3" file="/Project-prog3/src/waiz/main.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="2075" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="sasikala.backpain" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/BackPain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="97" x="1611" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="fauzan.outdoorsportdemo" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/outdoorsportdemo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="130" x="340" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="sasikala.poses.BackPain" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/BackPain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="87" x="1410" y="858"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="waiz.stationarybike" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/stationarybike.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="124" x="3763" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="sasikala.poses" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/BackPain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="96" x="1410" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="waiz.aerobicstrenghtcircuit" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/aerobicstrenghtcircuit.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="162" x="1546" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="fauzan.menu1" project="Project-prog3" file="/Project-prog3/src/fauzan/menu1.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="168" x="701" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="waiz.AtHomeAerobic1" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/ChooseTypeofAerobic.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="133" x="1748" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="waiz.jumprope" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/jumprope.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="110" x="1748" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="fauzan.surfing" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/surfing.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="132" x="2672" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="sasikala.posing" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Bloodpressure.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="96" x="2228" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="waiz.ChooseTypeofAerobic" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/ChooseTypeofAerobic.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="152" x="2036" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="waiz.Participant" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/Participant.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="147" x="909" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="nadzim.Running" project="Project-prog3" 
+    file="/Project-prog3/src/nadzim/Running.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="109" x="3314" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="sasikala.reducepressure" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Bloodpressure.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="116" x="2228" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="sasikala.Main" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="1096" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="fauzan.cycling" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/cycling.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="132" x="2844" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="fauzan.outdoorSp" project="Project-prog3" 
+    file="/Project-prog3/src/fauzan/outdoorSp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="240" x="2672" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="nadzim.Gym" project="Project-prog3" file="/Project-prog3/src/nadzim/Gym.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="149" x="3165" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="sasikala.StressRelief" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/StressRelief.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="139" x="2364" y="858"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="sasikala.Insomnia" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Insomnia.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="139" x="2384" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="waiz.AtGymAerobic1" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/ChooseTypeofAerobic.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="128" x="3613" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="sasikala.Bloodpressure" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Bloodpressure.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="108" x="1249" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="sasikala.Participant" project="Project-prog3" 
+    file="/Project-prog3/src/sasikala/Participant.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="174" x="1397" y="40"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="waiz.runningorjogging" project="Project-prog3" 
+    file="/Project-prog3/src/waiz/runningorjogging.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="137" x="1898" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="18"/>  
+  </generalization>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="25"/>  
+  </generalization>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </generalization>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="28"/>  
+  </generalization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="28"/>  
+  </generalization>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="28"/>  
+  </generalization>  
+  <nesting id="47">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <generalization id="48">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="49">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <generalization id="51">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="31"/>  
+  </generalization>  
+  <generalization id="52">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="53">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="18"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

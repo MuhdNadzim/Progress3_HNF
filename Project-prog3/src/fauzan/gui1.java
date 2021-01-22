@@ -83,51 +83,53 @@ public class gui1 {
 		frmOutdoorSportsRegistry.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frmOutdoorSportsRegistry.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Outdoor Sports Club");
-		lblNewLabel.setForeground(Color.ORANGE);
-		lblNewLabel.setBackground(Color.WHITE);
-		lblNewLabel.setBounds(10, 11, 399, 70);
-		lblNewLabel.setFont(new Font("Vivaldi", Font.BOLD, 40));
-		frmOutdoorSportsRegistry.getContentPane().add(lblNewLabel);
+		JLabel MainTitle = new JLabel("Outdoor Sports Club");
+		MainTitle.setForeground(Color.ORANGE);
+		MainTitle.setBackground(Color.WHITE);
+		MainTitle.setBounds(10, 11, 399, 70);
+		MainTitle.setFont(new Font("Vivaldi", Font.BOLD, 40));
+		frmOutdoorSportsRegistry.getContentPane().add(MainTitle);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(10, 76, 974, 455);
 		frmOutdoorSportsRegistry.getContentPane().add(tabbedPane);
 		
-		JPanel panel = new JPanel();
-		panel.setBackground(Color.LIGHT_GRAY);
-		panel.setBorder(new LineBorder(Color.ORANGE, 5));
-		tabbedPane.addTab("Register", null, panel, null);
+		JPanel Register = new JPanel();
+		Register.setBackground(Color.LIGHT_GRAY);
+		Register.setBorder(new LineBorder(Color.ORANGE, 5));
+		tabbedPane.addTab("Register", null, Register, null);
 		tabbedPane.setBackgroundAt(0, Color.LIGHT_GRAY);
-		panel.setLayout(null);
+		Register.setLayout(null);
 		
 		JLabel lblNewLabel_1 = new JLabel(" Info On Sport");
-		lblNewLabel_1.setBounds(10, 102, 118, 14);
-		panel.add(lblNewLabel_1);
+		lblNewLabel_1.setFont(new Font("Agency FB", Font.PLAIN, 35));
+		lblNewLabel_1.setBounds(10, 85, 173, 43);
+		Register.add(lblNewLabel_1);
 		
 		JTextPane infotxt = new JTextPane();
+		infotxt.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		infotxt.setBounds(10, 139, 560, 277);
-		panel.add(infotxt);
+		Register.add(infotxt);
 		
 		txtname1 = new JTextField();
 		txtname1.setBounds(290, 11, 280, 20);
-		panel.add(txtname1);
+		Register.add(txtname1);
 		txtname1.setColumns(10);
 		
 		txtname2 = new JTextField();
 		txtname2.setColumns(10);
 		txtname2.setBounds(290, 42, 280, 20);
-		panel.add(txtname2);
+		Register.add(txtname2);
 		
 		JLabel l4 = new JLabel("");
 		l4.setHorizontalAlignment(SwingConstants.CENTER);
 		l4.setBounds(590, 139, 369, 277);
-		panel.add(l4);
+		Register.add(l4);
 		
 		cbgen = new JComboBox();
 		cbgen.setModel(new DefaultComboBoxModel(new String[] {"Choose a Gender", "Male", "Female"}));
 		cbgen.setBounds(290, 73, 280, 20);
-		panel.add(cbgen);
+		Register.add(cbgen);
 		
 		JComboBox cbsport = new JComboBox();
 		cbsport.addActionListener(new ActionListener() {
@@ -150,45 +152,47 @@ public class gui1 {
 		cbsport.setMaximumRowCount(5);
 		cbsport.setModel(new DefaultComboBoxModel(new String[] {"Choose a Sport", "Hiking", "Cycling", "Surfing"}));
 		cbsport.setBounds(10, 41, 155, 22);
-		panel.add(cbsport);
+		Register.add(cbsport);
 		
 		
 		
 		
 		JLabel lblNewLabel_2 = new JLabel("Outdoor Sport name");
 		lblNewLabel_2.setBounds(10, 14, 155, 14);
-		panel.add(lblNewLabel_2);
+		Register.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("First Name");
 		lblNewLabel_3.setBounds(204, 14, 76, 14);
-		panel.add(lblNewLabel_3);
+		Register.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("Last Name");
 		lblNewLabel_3_1.setBounds(204, 45, 76, 14);
-		panel.add(lblNewLabel_3_1);
+		Register.add(lblNewLabel_3_1);
 		
 		JLabel lblNewLabel_3_2 = new JLabel("Gender");
 		lblNewLabel_3_2.setBounds(204, 76, 76, 14);
-		panel.add(lblNewLabel_3_2);
+		Register.add(lblNewLabel_3_2);
 		
 		JComboBox cbrace = new JComboBox();
 		cbrace.setModel(new DefaultComboBoxModel(new String[] {"Choose a Race", "Melayu", "Cina", "India"}));
 		cbrace.setBounds(290, 101, 280, 20);
-		panel.add(cbrace);
+		Register.add(cbrace);
 		
 		JLabel lblNewLabel_3_2_1 = new JLabel("Race");
 		lblNewLabel_3_2_1.setBounds(204, 104, 76, 14);
-		panel.add(lblNewLabel_3_2_1);
+		Register.add(lblNewLabel_3_2_1);
 		
-		JPanel panel_1 = new JPanel();
-		tabbedPane.addTab("table", null, panel_1, null);
-		panel_1.setLayout(null);
+		JPanel Table = new JPanel();
+		Table.setBorder(new LineBorder(Color.PINK, 5));
+		tabbedPane.addTab("Table", null, Table, null);
+		Table.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(153, 11, 806, 405);
-		panel_1.add(scrollPane);
+		Table.add(scrollPane);
 		
 		table = new JTable();
+		table.setBackground(Color.WHITE);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
 			},
@@ -228,8 +232,8 @@ public class gui1 {
 		}
 		scrollPane.setViewportView(table);
 		
-		JButton btnNewButton = new JButton("delete");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton DelBut = new JButton("Delete");
+		DelBut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 				int row=table.getSelectedRow();
@@ -260,11 +264,11 @@ public class gui1 {
 			
 			}
 		});
-		btnNewButton.setBounds(10, 254, 133, 74);
-		panel_1.add(btnNewButton);
+		DelBut.setBounds(10, 254, 133, 74);
+		Table.add(DelBut);
 		
-		JButton btnNewButton_1 = new JButton("Print to CSV");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton PrToCSVBut = new JButton("Print to CSV");
+		PrToCSVBut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					File fl= new File("RECORD2.csv");
@@ -292,8 +296,17 @@ public class gui1 {
 				}
 			}
 		});
-		btnNewButton_1.setBounds(10, 339, 133, 77);
-		panel_1.add(btnNewButton_1);
+		PrToCSVBut.setBounds(10, 339, 133, 77);
+		Table.add(PrToCSVBut);
+		
+		JButton RegistBut = new JButton("Register");
+		RegistBut.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tabbedPane.setSelectedIndex(0);
+			}
+		});
+		RegistBut.setBounds(10, 14, 133, 77);
+		Table.add(RegistBut);
 		
 		JButton butreg = new JButton("Register");
 		butreg.addActionListener(new ActionListener() {
@@ -330,9 +343,11 @@ public class gui1 {
 			}
 		});
 		butreg.setBounds(580, 98, 89, 23);
-		panel.add(butreg);
+		Register.add(butreg);
 		
 		JButton exitbt = new JButton("EXIT");
+		exitbt.setBounds(895, 58, 89, 23);
+		frmOutdoorSportsRegistry.getContentPane().add(exitbt);
 		exitbt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 					if(JOptionPane.showConfirmDialog(frmOutdoorSportsRegistry, "Confirm if you to exit", "Outdoor Sport Club",
@@ -342,8 +357,6 @@ public class gui1 {
 				
 			}
 		});
-		exitbt.setBounds(870, 98, 89, 23);
-		panel.add(exitbt);
 		
 	
 	}

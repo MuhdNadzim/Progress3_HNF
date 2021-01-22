@@ -31,11 +31,13 @@ import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.UUID;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
 import javax.swing.SwingConstants;
 import java.awt.Toolkit;
 import java.awt.Window.Type;
+import java.nio.charset.StandardCharsets;
 
 public class gui1 {
 
@@ -173,8 +175,22 @@ public class gui1 {
 		lblNewLabel_3_2.setBounds(204, 76, 76, 14);
 		Register.add(lblNewLabel_3_2);
 		
+		
+		
 		JComboBox cbrace = new JComboBox();
-		cbrace.setModel(new DefaultComboBoxModel(new String[] {"Choose a Race", "Melayu", "Cina", "India"}));
+		cbrace.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String ot="";
+				if(cbrace.getSelectedItem()=="Other") {
+					ot=JOptionPane.showInputDialog("Input Your Race", ot);
+					if(JOptionPane.showConfirmDialog(frmOutdoorSportsRegistry, "Did you type "+ot+"?", "Outdoor Sport Club",
+				            JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
+					cbrace.setModel(new DefaultComboBoxModel(new String[] {"Choose a Race", "Melayu", "Cina", "India",ot,"Other"}));
+					}
+			}
+				}
+		});
+		cbrace.setModel(new DefaultComboBoxModel(new String[] {"Choose a Race", "Melayu", "Cina", "India","Other"}));
 		cbrace.setBounds(290, 101, 280, 20);
 		Register.add(cbrace);
 		
@@ -238,9 +254,10 @@ public class gui1 {
 				try {
 				int row=table.getSelectedRow();
 				int col=table.getSelectedColumn();
+				if(col!=0) {
+					JOptionPane.showMessageDialog(null, "Please pick an ID");
+				}else {
 				String b=String.valueOf(table.getValueAt(row,col));
-				
-				
 				inf.remrec(b);
 				DefaultTableModel model = (DefaultTableModel) table.getModel();
 				if(table.getSelectedRow()==-1) {
@@ -254,8 +271,7 @@ public class gui1 {
 				
 					else {
 						model.removeRow(table.getSelectedRow());
-						
-					
+				}
 				}
 				}catch(Exception e1) {
 					JOptionPane.showMessageDialog(null, "Please pick an ID");
@@ -316,7 +332,10 @@ public class gui1 {
 							cbrace.getSelectedItem()=="Choose a Race") {
 						JOptionPane.showMessageDialog(null,"Please Enter the info properly");
 					}else {
-				int rnum=rand.nextInt(1000000)+1;
+				int rnum=rand.nextInt(10000000)+1;
+				while(rnum<0) {
+					rnum=rand.nextInt(10000000)+1;
+				}
 				String id=String.valueOf(rnum);
 				DefaultTableModel model = (DefaultTableModel) table.getModel();
 				model.addRow(new Object[]{

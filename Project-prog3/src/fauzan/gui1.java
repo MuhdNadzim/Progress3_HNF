@@ -77,7 +77,7 @@ public class gui1 {
 		Random rand=new Random();
 		outdoorsportdemo ods=new outdoorsportdemo();
 		frmOutdoorSportsRegistry = new JFrame();
-		frmOutdoorSportsRegistry.setTitle("Outdoor Sports Registry");
+		frmOutdoorSportsRegistry.setTitle("Outdoor Sports Club");
 		frmOutdoorSportsRegistry.getContentPane().setBackground(Color.DARK_GRAY);
 		frmOutdoorSportsRegistry.setBounds(100, 100, 1010, 581);
 		frmOutdoorSportsRegistry.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -241,10 +241,10 @@ public class gui1 {
 				DefaultTableModel model = (DefaultTableModel) table.getModel();
 				if(table.getSelectedRow()==-1) {
 					if(table.getRowCount()==0) {
-						JOptionPane.showMessageDialog(null, "No data available","Proton registry",
+						JOptionPane.showMessageDialog(null, "No data available","Outdoor Sport Club",
 								JOptionPane.OK_OPTION);}
 					else {
-						JOptionPane.showMessageDialog(null, "Select a row to delete","Proton registry",
+						JOptionPane.showMessageDialog(null, "Select a row to delete","Outdoor Sport Club",
 								JOptionPane.OK_OPTION);}
 				}
 				
@@ -325,12 +325,25 @@ public class gui1 {
 					
 					}
 				}catch(Exception e1){
-					
+					JOptionPane.showMessageDialog(null, "Something Went Wrong");
 				}
 			}
 		});
 		butreg.setBounds(580, 98, 89, 23);
 		panel.add(butreg);
+		
+		JButton exitbt = new JButton("EXIT");
+		exitbt.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+					if(JOptionPane.showConfirmDialog(frmOutdoorSportsRegistry, "Confirm if you to exit", "Outdoor Sport Club",
+				            JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
+						System.exit(0);
+					}
+				
+			}
+		});
+		exitbt.setBounds(870, 98, 89, 23);
+		panel.add(exitbt);
 		
 	
 	}

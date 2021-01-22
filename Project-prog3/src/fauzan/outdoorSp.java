@@ -61,7 +61,7 @@ public class outdoorSp {
 	
 	public void experience() {
 		exp="Thrilling and fun outdoors";
-		System.out.println("Thrilling and fun outdoors");
+		//System.out.println("Thrilling and fun outdoors");
 	}
 	
 	public String toString() {

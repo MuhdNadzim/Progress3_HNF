@@ -186,6 +186,9 @@ public class gui1 {
 					if(JOptionPane.showConfirmDialog(frmOutdoorSportsRegistry, "Did you type "+ot+"?", "Outdoor Sport Club",
 				            JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
 					cbrace.setModel(new DefaultComboBoxModel(new String[] {"Choose a Race", "Melayu", "Cina", "India",ot,"Other"}));
+					cbrace.setSelectedItem(ot);
+					}else {
+						cbrace.setSelectedItem("Choose a Race");	
 					}
 			}
 				}

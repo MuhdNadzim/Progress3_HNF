@@ -6,23 +6,39 @@
 package waiz;
 ///testtest
 import java.awt.Color;
+import java.awt.Component;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.RowFilter;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.DefaultComboBoxModel;
 
 /**
  *
  * @author Waiz
  */
 public class guilatest extends javax.swing.JFrame {
+private static final Component Frame = null;
 int i = 0;
     /**
      * Creates new form guilatest
@@ -35,7 +51,7 @@ int i = 0;
     DefaultTableModel model;
     public guilatest() {
         initComponents();
-        dateTF.setText(" "+ dateFormat.format(date));
+        dateTF.setText( "27/01/21");
         label50.setVisible(false);
         label51.setVisible(false);
         text1.setVisible(false);
@@ -186,6 +202,12 @@ int i = 0;
         emailTF = new javax.swing.JTextField();
         addressTF = new javax.swing.JTextField();
         contactTF = new javax.swing.JTextField();
+        contactTF.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		
+
+        	}
+        });
         priceTF = new javax.swing.JTextField();
         dateTF = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -304,7 +326,7 @@ int i = 0;
         gambar2.setBounds(964, 244, 270, 180);
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Designed & Developed by Muhamad Waiz  © Copyright 2021");
+        jLabel5.setText("Designed & Developed by Muhamad Waiz  \u00A9 Copyright 2021");
         jPanel2.add(jLabel5);
         jLabel5.setBounds(530, 540, 330, 14);
 
@@ -315,6 +337,56 @@ int i = 0;
         TabPane.addTab("Aerobic Class Menu", jPanel2);
 
         jPanel1.setLayout(null);
+        
+        JLabel lblNewLabel = new JLabel("");
+        lblNewLabel.setIcon(new ImageIcon(guilatest.class.getResource("/Images/search.png")));
+        lblNewLabel.setBounds(1020, 89, 100, 20);
+        jPanel1.add(lblNewLabel);
+        
+        JButton btnNewButton = new JButton("");
+        btnNewButton.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+				String filePath = "RecordedAerobic.txt";
+				File file = new File(filePath);
+				
+				try {
+					BufferedReader br = new BufferedReader(new FileReader(file));
+					
+					DefaultTableModel model = (DefaultTableModel)table.getModel();
+					Object[] lines = br.lines().toArray();
+					
+					for(int i = 0; i<lines.length; i++ ) {
+						String[] row = lines[i].toString().split("  ");
+						model.addRow(row);
+						
+					}
+				} catch (Exception ex) {
+					// TODO Auto-generated catch block
+					Logger.getLogger(guilatest.class.getName()).log(Level.SEVERE, null, ex);
+				}
+				
+				
+			}
+		});
+        
+        btnNewButton.setIcon(new ImageIcon(guilatest.class.getResource("/Images/displaybtn-01.png")));
+        btnNewButton.setBounds(894, 69, 116, 40);
+        jPanel1.add(btnNewButton);
+        
+        jTF = new JTextField();
+        jTF.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		
+        		DefaultTableModel table1 = (DefaultTableModel)table.getModel();
+        		String search = jTF.getText().toLowerCase();
+        		TableRowSorter<DefaultTableModel> tr = new TableRowSorter<DefaultTableModel>(table1);
+        		table.setRowSorter(tr);
+        		tr.setRowFilter(RowFilter.regexFilter(search));
+        	}
+        });
+        jTF.setBounds(1122, 83, 133, 25);
+        jPanel1.add(jTF);
+        jTF.setColumns(10);
 
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -415,12 +487,12 @@ int i = 0;
         jButton5.setBounds(1030, 530, 100, 40);
 
         genderTF.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        genderTF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Choose..", "Male", "Female" }));
+        genderTF.setModel(new DefaultComboBoxModel(new String[] {"Please Choose..", "Male", "Female"}));
         jPanel1.add(genderTF);
         genderTF.setBounds(160, 190, 140, 30);
 
         subTF.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        subTF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Choose..", "At Home Aerobic", "At Gym Aerobic" }));
+        subTF.setModel(new DefaultComboBoxModel(new String[] {"Please Choose..", "At Home Aerobic", "At Gym Aerobic"}));
         jPanel1.add(subTF);
         subTF.setBounds(180, 400, 210, 30);
 
@@ -458,7 +530,7 @@ int i = 0;
         jButton9.setBounds(691, 530, 190, 40);
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Designed & Developed by Muhamad Waiz  © Copyright 2021");
+        jLabel8.setText("Designed & Developed by Muhamad Waiz  \u00A9 Copyright 2021");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(640, 510, 330, 14);
 
@@ -588,7 +660,7 @@ int i = 0;
         mobobesetext.setBounds(960, 470, 290, 22);
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Designed & Developed by Muhamad Waiz  © Copyright 2021");
+        jLabel9.setText("Designed & Developed by Muhamad Waiz  \u00A9 Copyright 2021");
         jPanel3.add(jLabel9);
         jLabel9.setBounds(730, 530, 340, 20);
 
@@ -628,18 +700,25 @@ int i = 0;
         // TODO add your handling code here:
         DefaultTableModel model;
         model = (DefaultTableModel) table.getModel();
-
+        
+        
+       
+        
+        //int billDate = Integer.parseInt(tfBillDate.getText());
+        
         model.addRow(new Object[]{
-           dateTF.getText(),
-           fnameTF.getText(),
-           lnameTF.getText(),
-           genderTF.getSelectedItem(),
-           emailTF.getText(),
-           addressTF.getText(),
-           contactTF.getText(),
-           subTF.getSelectedItem(),
-           priceTF.getText(),
+           dateTF.getText()+"  ",
+           fnameTF.getText()+"  ",
+           lnameTF.getText()+"  ",
+           genderTF.getSelectedItem()+"  ",
+           emailTF.getText()+"  ",
+           addressTF.getText()+"  ",         
+           contactTF.getText()+"  ",
+           subTF.getSelectedItem()+"  ",
+           priceTF.getText()+"  ",
         });
+        
+        
     }//GEN-LAST:event_enterBTNActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -657,7 +736,7 @@ int i = 0;
             for(int j = 0; j<table.getColumnCount(); j++){
                 bw.write(table.getModel().getValueAt(i, j)+" ");
             }
-            bw.write("\n____________________________________________________________________________________________________\n");
+            bw.write("\n");
         }
         bw.close();
         fw.close();
@@ -677,7 +756,7 @@ int i = 0;
         addressTF.setText("");
         contactTF.setText("");
   
-        priceTF.setText("");
+        priceTF.setText("RM");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -731,6 +810,8 @@ int i = 0;
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
+       
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -745,11 +826,12 @@ int i = 0;
         TabPane.setSelectedIndex(i);
     }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) throws NumberFormatException {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
+    	
         double height = Double.parseDouble(text1tf.getText());
-        double weight = Double.parseDouble(text2tf.getText());
-        double BMI = weight / (height * height);
+        double weight = Double.parseDouble(text2tf.getText());  
+    	double BMI = weight / (height * height);	
         
         String calbmi = String.format("%.2f", BMI);
         text3tf.setText(calbmi);
@@ -827,6 +909,8 @@ int i = 0;
             mobobesetext.setVisible(true);
         }
     }//GEN-LAST:event_jButton10ActionPerformed
+    
+   
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
@@ -950,4 +1034,5 @@ int i = 0;
     private javax.swing.JTextArea text22;
     private javax.swing.JTextField text2tf;
     private javax.swing.JTextField text3tf;
+    private JTextField jTF;
 }

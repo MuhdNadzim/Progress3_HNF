@@ -705,7 +705,8 @@ int i = 0;
        
         
         //int billDate = Integer.parseInt(tfBillDate.getText());
-        
+        try{
+            int int1 = Integer.parseInt(contactTF.getText());
         model.addRow(new Object[]{
            dateTF.getText()+"  ",
            fnameTF.getText()+"  ",
@@ -717,6 +718,8 @@ int i = 0;
            subTF.getSelectedItem()+"  ",
            priceTF.getText()+"  ",
         });
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(rootPane,"Please enter Contact using number only");}
         
         
     }//GEN-LAST:event_enterBTNActionPerformed
